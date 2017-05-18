@@ -3,6 +3,7 @@ package com.cakes.service;
 import java.util.List;
 
 import com.cakes.entity.Chef;
+import com.cakes.entity.Orders;
 
 public interface ChefService {
 
@@ -15,5 +16,7 @@ public interface ChefService {
 	void delete(int id);
 
 	void update(Chef chef);
+	
+	void addChefToOrder(Chef chef, Orders orders);
 	
 }

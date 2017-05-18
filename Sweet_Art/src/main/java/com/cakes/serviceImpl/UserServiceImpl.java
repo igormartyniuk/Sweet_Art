@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cakes.dao.UserDao;
+import com.cakes.entity.Orders;
 import com.cakes.entity.User;
 import com.cakes.service.UserService;
 
@@ -38,6 +39,10 @@ public class UserServiceImpl implements UserService{
 
 	public void update(User user) {
 		userDao.save(user);
+	}
+
+	public void addOrderToUser(User user, Orders orders) {
+		user.getOrders().add(orders);
 	}
 
 

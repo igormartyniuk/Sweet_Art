@@ -7,6 +7,7 @@
 <title>Sweet Art</title>
 </head>
 <body>
-<h1 style="text-align: center; color: #ce7e01">Cakes</h1>
+	<h1 style="text-align: center; color: #ce7e01">Cakes</h1>
+	<p style="text-align: center"><a  style="color: #ce7e01" href="/">index</a></p>
 </body>
 </html>

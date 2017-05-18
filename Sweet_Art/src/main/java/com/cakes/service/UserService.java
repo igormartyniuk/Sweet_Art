@@ -2,6 +2,7 @@ package com.cakes.service;
 
 import java.util.List;
 
+import com.cakes.entity.Orders;
 import com.cakes.entity.User;
 
 public interface UserService {
@@ -15,5 +16,7 @@ public interface UserService {
 	void delete(int id);
 
 	void update(User user);
+	
+	void addOrderToUser(User user, Orders orders);
 	
 }

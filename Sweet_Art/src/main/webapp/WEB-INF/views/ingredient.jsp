@@ -8,7 +8,8 @@
 <title>Sweet Art</title>
 </head>
 <body>
-<h1 style="text-align: center; color: #ce7e01">Ingredient</h1>
+	<h1 style="text-align: center; color: #ce7e01">Ingredient</h1>
+	<p style="text-align: center"><a  style="color: #ce7e01" href="/">index</a></p>
 
 	<div style="text-align: center; margin-top: 5%">
 		<form action="/ingredient" method="post">
@@ -23,7 +24,7 @@
 		
 	<ol>
 		<c:forEach var="ingredient" items="${ingredient}">
-			<li>${ingredient.name}<a href="/deleteIngredient/${ingredient.id}"> delete</a></li>
+			<li>${ingredient.name} ${ingredient.price}<a href="/deleteIngredient/${ingredient.id}"> delete</a></li>
 		</c:forEach>
 	</ol>
 

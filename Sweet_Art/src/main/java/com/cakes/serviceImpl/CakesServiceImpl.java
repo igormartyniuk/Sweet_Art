@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.cakes.dao.CakesDao;
 import com.cakes.entity.Cakes;
+import com.cakes.entity.Ingredient;
 import com.cakes.service.CakesService;
 
 @Service
@@ -33,6 +34,11 @@ public class CakesServiceImpl implements CakesService{
 
 	public void update(Cakes cakes) {
 		cakesDao.save(cakes);
+	}
+
+	public void addIngredientToCake(Cakes cakes, Ingredient ingredient) {
+		cakes.getIngredient().add(ingredient);
+		
 	}
 
 	

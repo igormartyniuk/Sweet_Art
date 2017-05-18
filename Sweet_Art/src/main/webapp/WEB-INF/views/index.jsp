@@ -7,16 +7,16 @@
 <title>Sweet Art</title>
 </head>
 <body>
-<h1 style="text-align: center; color: #ce7e01">Sweet Art</h1>
-
-<p style="font-size: 20">
-<a style="color: black;"  href="/registration">sing up</a>
-<br>
-<a style="color: black;" href="/cakes">cakes</a>
-<br>
-<a style="color: black;" href="/orders">orders</a>
-<br>
-<a style="color: black;" href="/ingredient">ingredient</a>
-</p>
+	<h1 style="text-align: center; color: #ce7e01">Sweet Art</h1>
+	
+	<p style="font-size: 20">
+	<a style="color: black;"  href="/registration">sing up</a>
+	<br>
+	<a style="color: black;" href="/cakes">cakes</a>
+	<br>
+	<a style="color: black;" href="/orders">orders</a>
+	<br>
+	<a style="color: black;" href="/ingredient">ingredient</a>
+	</p>
 </body>
 </html>

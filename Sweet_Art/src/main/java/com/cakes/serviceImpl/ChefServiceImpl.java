@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.cakes.dao.ChefDao;
 import com.cakes.entity.Chef;
+import com.cakes.entity.Orders;
 import com.cakes.service.ChefService;
 
 @Service
@@ -33,6 +34,10 @@ public class ChefServiceImpl implements ChefService{
 
 	public void update(Chef chef) {
 		chefDao.save(chef);
+	}
+
+	public void addChefToOrder(Chef chef, Orders orders) {
+		chef.getOrders().add(orders);
 	}
 	
 	

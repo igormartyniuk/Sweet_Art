@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cakes.dao.OrdersDao;
+import com.cakes.entity.Cakes;
 import com.cakes.entity.Orders;
 import com.cakes.service.OrderService;
 
@@ -33,6 +34,10 @@ public class OrderServiceImpl implements OrderService{
 
 	public void update(Orders orders) {
 		ordersDao.save(orders);
+	}
+
+	public void addCakesToOrder(Orders orders, Cakes cakes) {
+		orders.getCakes().add(cakes);
 	}
 	
 	

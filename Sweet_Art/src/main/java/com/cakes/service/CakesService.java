@@ -3,6 +3,7 @@ package com.cakes.service;
 import java.util.List;
 
 import com.cakes.entity.Cakes;
+import com.cakes.entity.Ingredient;
 
 public interface CakesService {
 
@@ -15,6 +16,8 @@ public interface CakesService {
 	void delete(int id);
 
 	void update(Cakes cakes);
+	
+	void addIngredientToCake(Cakes cakes, Ingredient ingredient);
 	
 	
 }

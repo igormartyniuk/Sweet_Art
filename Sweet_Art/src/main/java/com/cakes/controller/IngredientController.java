@@ -16,32 +16,29 @@ public class IngredientController {
 
 	@Autowired
 	private IngredientService ingredientservice;
-	
+
 	@GetMapping("/ingredient")
-	public String ingredient(Model model){
+	public String ingredient(Model model) {
 		model.addAttribute("ingredient", ingredientservice.findAll());
-	return "ingredient";
+		return "ingredient";
 	}
 
-	
 	@PostMapping("/ingredient")
-	public String ingredient(@RequestParam String ingredientName){
-		ingredientservice.save(new Ingredient(ingredientName));
+	public String ingredient(@RequestParam String ingredientName, @RequestParam double ingredientPrice) {
+		Ingredient ingredient = new Ingredient();
+		ingredient.setName(ingredientName);
+		ingredient.setPrice(ingredientPrice);
+		ingredientservice.save(ingredient);
 		return "redirect:/ingredient";
+
 	}
-	
-//	@PostMapping("/ingredient")
-//	public Ingredient ingredient(@RequestParam String ingredientName, @RequestParam double ingredientPrice){
-//		ingredientservice.save(new Ingredient(ingredientName, ingredientPrice));
-//		return ingredient(ingredientName, ingredientPrice);
-//	}
-	
+
 	@GetMapping("/deleteIngredient/{id}")
-	public String delete(@PathVariable int id){
-		
+	public String delete(@PathVariable int id) {
+
 		ingredientservice.delete(id);
 		return "redirect:/ingredient";
-		
+
 	}
-	
+
 }

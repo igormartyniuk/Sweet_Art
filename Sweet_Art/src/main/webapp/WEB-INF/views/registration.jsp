@@ -12,7 +12,7 @@
 	<h1 style="text-align: center; color: #ce7e01">registration</h1>
 	<p style="text-align: center"><a  style="color: #ce7e01" href="/">index</a></p>
 
-	<div style="text-align: center; margin-top: 5%">
+	<div style="text-align: center;">
 
 		<form action="/saveUser" method="post">
 			<input type="text" name="username" placeholder="username"> <br>
@@ -24,18 +24,56 @@
 		</form>
 
 	</div>
-
+	
 	<div style="display: inline-block">
 		<ol>
+		
+		<div style="width: 152px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
+		display: inline-block; text-align: center; margin-bottom: 5px">User Name </div>
+		
+		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
+		display: inline-block; text-align: center; margin-bottom: 5px">User Email</div>
+		
+		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
+		display: inline-block; text-align: center; margin-bottom: 5px">User Password</div>
+		
+		<div style="width: 80px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;  border-left:1px solid #ce7e01;
+		display: inline-block; text-align: center">REMOVE</div>
+		
 			<c:forEach var="u" items="${users}">
-				<li
-					style="border-top: 1px solid black; 
-					margin-top: 5px;
-					padding-top: 5px; ">
-					${u.name}  || 
-					${u.email} || 
-					${u.password} <a href="/deleteUser/${u.id}">delete</a> <br>
-					<br>
+				<li>
+					<div
+						style="width: 150px; height: 20px;
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">
+						${u.name}
+					</div> 
+					
+					<div
+						style="width: 150px; height: 20px;
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">
+						${u.email}
+					</div> 
+					
+					<div
+						style="width: 150px; height: 20px; 
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">
+						${u.password}
+					</div>
+					
+					<div
+						style="width: 80px; height: 20px;
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">	 
+						<a href="/deleteUser/${u.id}">delete</a>
+					</div>
+					
 			</c:forEach>
 		</ol>
 	</div>

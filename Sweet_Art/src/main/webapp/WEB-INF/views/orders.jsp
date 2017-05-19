@@ -10,7 +10,7 @@
 <body>
 	<h1 style="text-align: center; color: #ce7e01">Orders</h1>
 	<p style="text-align: center">
-		<a style="color: #ce7e01" href="/">index</a>
+		<a style="color: #ce7e01; font-size: 25px; text-decoration: none;" href="/">HOME</a>
 	</p>
 
 	<div style="text-align: center;">

@@ -9,14 +9,13 @@
 <body>
 	<h1 style="text-align: center; color: #ce7e01">Sweet Art</h1>
 	
-	<p style="font-size: 20">
-	<a style="color: black;"  href="/registration">sing up</a>
-	<br>
-	<a style="color: black;" href="/cakes">cakes</a>
-	<br>
-	<a style="color: black;" href="/orders">orders</a>
-	<br>
-	<a style="color: black;" href="/ingredient">ingredient</a>
-	</p>
+ <ul style="text-align: center; position:absolute; ;">
+ <li style="width: 100px; display: inline-block;"><a style="color: #ce7e01; font-size: 25px; text-decoration: none;"  href="/registration">sing up</a></li>
+  <li style="width: 100px; display: inline-block;"><a style="color: #ce7e01; font-size: 25px; text-decoration: none;" href="/cakes">cakes</a></li>
+  <li style="width: 100px; display: inline-block;"><a style="color: #ce7e01; font-size: 25px; text-decoration: none;" href="/orders">orders</a></li>
+   <li style="width: 100px; display: inline-block;"><a style="color: #ce7e01; font-size: 25px; text-decoration: none;" href="/ingredient">ingredient</a></li>
+  
+ 
+ </ul>
 </body>
 </html>

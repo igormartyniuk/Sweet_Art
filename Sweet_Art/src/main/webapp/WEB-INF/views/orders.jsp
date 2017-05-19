@@ -31,15 +31,21 @@
 		<ol>
 
 			<div
-				style="width: 152px; height: 20px; color: #ce7e01; border-bottom: 1px solid #ce7e01; border-right: 1px solid #ce7e01; display: inline-block; text-align: center; margin-bottom: 5px">Orders
+				style="width: 150px; height: 20px; color: #ce7e01; border-bottom: 1px solid #ce7e01;
+				 border-right: 1px solid #ce7e01; display: inline-block;
+				  text-align: center; margin-bottom: 5px">Orders
 				type</div>
 
 			<div
-				style="width: 150px; height: 20px; color: #ce7e01; border-bottom: 1px solid #ce7e01; border-right: 1px solid #ce7e01; display: inline-block; text-align: center; margin-bottom: 5px">Orders
+				style="width: 150px; height: 20px; color: #ce7e01;
+				border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;
+				 display: inline-block; text-align: center; margin-bottom: 5px">Orders
 				name</div>
 
 			<div
-				style="width: 60px; height: 20px; color: #ce7e01; border-bottom: 1px solid #ce7e01; display: inline-block; text-align: center">Numbers</div>
+				style="width: 60px; height: 20px; color: #ce7e01;
+				border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;
+				 display: inline-block; text-align: center">Numbers</div>
 
 			<div
 				style="width: 80px; height: 20px; color: #ce7e01; border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; display: inline-block; text-align: center">REMOVE</div>

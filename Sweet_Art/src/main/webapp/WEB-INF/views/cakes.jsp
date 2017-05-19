@@ -27,13 +27,15 @@
 	<div style="display: inline-block">
 		<ol>
 		
-		<div style="width: 152px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
+		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">Cakes type </div>
 		
-		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
+		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;
+		border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">Cakes name</div>
 		
-		<div style="width: 52px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; 
+		<div style="width: 50px; height: 20px; color:#ce7e01; 
+		border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01; 
 		display: inline-block; text-align: center">Weight</div>
 		
 		<div style="width: 80px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;  border-left:1px solid #ce7e01;

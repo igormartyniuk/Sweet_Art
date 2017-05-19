@@ -28,7 +28,8 @@
 		<div style="width: 151px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">Ingredient name</div>
 		
-		<div style="width: 52px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; 
+		<div style="width: 52px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;
+		border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01; 
 		display: inline-block; text-align: center">Price</div>
 		
 		<div style="width: 80px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;  border-left:1px solid #ce7e01;

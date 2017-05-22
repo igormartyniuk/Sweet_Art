@@ -38,6 +38,10 @@
 		border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01; 
 		display: inline-block; text-align: center">Weight</div>
 		
+		<div style="width: 80px; height: 20px; color:#ce7e01; 
+		border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01; 
+		display: inline-block; text-align: center">UPDATE</div>
+		
 		<div style="width: 80px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;  border-left:1px solid #ce7e01;
 		display: inline-block; text-align: center">REMOVE</div>
 		
@@ -48,7 +52,7 @@
 						border: 1px solid black; 
 						display: inline-block;
 						text-align: center;">
-						${cake.cakeType}
+						${cake.cakeType }
 					</div> 
 					
 					<div
@@ -65,6 +69,14 @@
 						display: inline-block;
 						text-align: center;">
 						${cake.weight}
+					</div>
+					
+					<div
+						style="width: 80px; height: 20px;
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">	 
+						 <a href="/updateCakes/${cake.id}">update</a>
 					</div>
 					
 					<div

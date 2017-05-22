@@ -25,19 +25,23 @@
 
 	</div>
 	
-	<div style="display: inline-block">
+	<div style="display: inline-block"> 
 		<ol>
 		
 		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">User Name </div>
 		
-		<div style="width: 150px; height: 20px; color:#ce7e01;
+		<div style="width: 180px; height: 20px; color:#ce7e01;
 		 border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">User Email</div>
 		
 		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; 
 		border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">User Password</div>
+		
+		<div style="width: 80px; height: 20px; color:#ce7e01; 
+		border-bottom: 1px solid #ce7e01; border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;
+		display: inline-block; text-align: center">UPDATE</div>
 		
 		<div style="width: 80px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;  border-left:1px solid #ce7e01;
 		display: inline-block; text-align: center">REMOVE</div>
@@ -53,7 +57,7 @@
 					</div> 
 					
 					<div
-						style="width: 150px; height: 20px;
+						style="width: 180px; height: 20px;
 						border: 1px solid black; 
 						display: inline-block;
 						text-align: center;">
@@ -66,6 +70,14 @@
 						display: inline-block;
 						text-align: center;">
 						${u.password}
+					</div>
+					
+					<div
+						style="width: 80px; height: 20px;
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">	 
+						<a href="/updateUser/${u.id}">update</a>
 					</div>
 					
 					<div

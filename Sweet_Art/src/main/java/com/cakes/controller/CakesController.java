@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.cakes.entity.Cakes;
+import com.cakes.entity.User;
 import com.cakes.service.CakesService;
 
 @Controller
@@ -52,5 +53,32 @@ public class CakesController {
 		cakesService.delete(id);
 
 		return "redirect:/cakes";
+	}
+	
+	@GetMapping("/updateCakes/{id}")
+	public String updateCake(@PathVariable int id, Model model){
+		
+		Cakes cakes = cakesService.findOne(id);
+		
+		model.addAttribute("currentCake", cakes);
+		
+		return "updateCakes";
+	}
+	
+	@PostMapping("/updateCakes/{id}")
+	public String updateUser(@PathVariable int id, 
+							 @RequestParam String cakeType, 
+							 @RequestParam String cakeName,
+							 @RequestParam double weight){
+		
+		Cakes cakes = cakesService.findOne(id);
+	
+		cakes.setCakeType(cakeType);
+		cakes.setCakeName(cakeName);
+		cakes.setWeight(weight);
+		
+		cakesService.save(cakes);
+	
+	return "redirect:/cakes";
 	}
 }

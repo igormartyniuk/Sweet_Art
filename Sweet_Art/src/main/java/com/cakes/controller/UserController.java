@@ -51,5 +51,31 @@ public class UserController {
 		
 		return "redirect:/registration";
 	}
-
+	
+	@GetMapping("/updateUser/{id}")
+	public String updateUser(@PathVariable int id, Model model){
+		
+		User user = userService.findOne(id);
+		
+		model.addAttribute("currentUser", user);
+		
+		return "updateUser";
+	}
+	
+	@PostMapping("/updateUser/{id}")
+	public String updateUser(@PathVariable int id, 
+							 @RequestParam String name, 
+							 @RequestParam String email,
+							 @RequestParam String password){
+		
+	User user = userService.findOne(id);
+	
+	user.setName(name);
+	user.setEmail(email);
+	user.setPassword(password);
+	
+	userService.save(user);
+	
+	return "redirect:/registration";
+	}
 }

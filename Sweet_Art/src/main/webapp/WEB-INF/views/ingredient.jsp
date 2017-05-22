@@ -16,7 +16,9 @@
 	<div style="text-align: center;">
 		<form action="/ingredient" method="post">
 			<input type="text" name="ingredientName" placeholder="ingredient">
-			<br> <input type="text" name="ingredientPrice"
+			<br>
+			<br>
+			<input type="text" name="ingredientPrice"
 				placeholder="price"> <br> <br>
 			<button>save ingredient</button>
 		</form>
@@ -25,12 +27,16 @@
 	<div style="display: inline-block">
 		<ol>
 		
-		<div style="width: 151px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
+		<div style="width: 150px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01; border-right:1px solid #ce7e01;
 		display: inline-block; text-align: center; margin-bottom: 5px">Ingredient name</div>
 		
-		<div style="width: 52px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;
-		border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01; 
+		<div style="width: 50px; height: 20px; color:#ce7e01;
+		 border-bottom: 1px solid #ce7e01;border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01; 
 		display: inline-block; text-align: center">Price</div>
+		
+		<div style="width: 80px; height: 20px; color:#ce7e01;
+		border-bottom: 1px solid #ce7e01;border-left: 1px solid #ce7e01; border-right: 1px solid #ce7e01;  
+		display: inline-block; text-align: center">UPDATE</div>
 		
 		<div style="width: 80px; height: 20px; color:#ce7e01; border-bottom: 1px solid #ce7e01;  border-left:1px solid #ce7e01;
 		display: inline-block; text-align: center">REMOVE</div>
@@ -51,6 +57,14 @@
 						text-align: center;">
 						${ingredient.price}
 					</div>
+					<div
+						style="width: 80px; height: 20px;
+						border: 1px solid black; 
+						display: inline-block;
+						text-align: center;">	 
+						 <a href="/updateIngredient/${ingredient.id}">update</a>
+					</div>
+					
 					<div
 						style="width: 80px; height: 20px;
 						border: 1px solid black; 

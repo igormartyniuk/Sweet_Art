@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.cakes.entity.Cakes;
 import com.cakes.entity.Ingredient;
 import com.cakes.service.IngredientService;
 
@@ -15,20 +16,21 @@ import com.cakes.service.IngredientService;
 public class IngredientController {
 
 	@Autowired
-	private IngredientService ingredientservice;
+	private IngredientService ingredientService;
 
 	@GetMapping("/ingredient")
 	public String ingredient(Model model) {
-		model.addAttribute("ingredient", ingredientservice.findAll());
+		model.addAttribute("ingredient", ingredientService.findAll());
 		return "ingredient";
 	}
 
 	@PostMapping("/ingredient")
-	public String ingredient(@RequestParam String ingredientName, @RequestParam double ingredientPrice) {
+	public String ingredient(@RequestParam String ingredientName,
+			@RequestParam double ingredientPrice) {
 		Ingredient ingredient = new Ingredient();
 		ingredient.setName(ingredientName);
 		ingredient.setPrice(ingredientPrice);
-		ingredientservice.save(ingredient);
+		ingredientService.save(ingredient);
 		return "redirect:/ingredient";
 
 	}
@@ -36,9 +38,33 @@ public class IngredientController {
 	@GetMapping("/deleteIngredient/{id}")
 	public String delete(@PathVariable int id) {
 
-		ingredientservice.delete(id);
+		ingredientService.delete(id);
 		return "redirect:/ingredient";
 
+	}
+
+	@GetMapping("/updateIngredient/{id}")
+	public String updateCake(@PathVariable int id, Model model) {
+
+		Ingredient ingredient = ingredientService.findOne(id);
+
+		model.addAttribute("currentIngredient", ingredient);
+
+		return "updateIngredient";
+	}
+
+	@PostMapping("/updateIngredient/{id}")
+	public String updateUser(@PathVariable int id, @RequestParam String ingredientName,
+			@RequestParam double ingredientPrice) {
+
+		Ingredient ingredient = ingredientService.findOne(id);
+
+		ingredient.setName(ingredientName);
+		ingredient.setPrice(ingredientPrice);
+
+		ingredientService.save(ingredient);
+
+		return "redirect:/ingredient";
 	}
 
 }
